@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forEach Studies</title>
+</head>
+
+<body>
+
+    <h1>Look at the Consol</h1>
+
+
+    <script>
+        const years = [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026, 2027, 2028, 2029, 2030]
+
+        years.sort(function (a, b) {
+            return a - b
+        });
+
+        years.forEach((item) => {
+            if (item < 2022) {
+                console.log(" Das Jahr " + item + " ist vergangen ")
+            } else if (item == 2022) {
+                console.log(" Das Jahr " + item + " ist die Gegenwart ")
+            } else if (item > 2022) {
+                console.log(" Das Jahr " + item + " liegt in der Zukunft ")
+            }
+        });
+    </script>
+</body>
+
+</html>
